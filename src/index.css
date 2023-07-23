@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; 
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.movie-card h3 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-image: url("https://i.imgur.com/nBhOJKm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html {
+  color: wheat;
+}
